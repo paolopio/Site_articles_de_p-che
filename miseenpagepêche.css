@@ -1,0 +1,97 @@
+/* Fond animé style eau */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(-45deg, #45D976, #2bb7da, #1e90ff, #45D976);
+    background-size: 400% 400%;
+    animation: vague 8s ease infinite;
+}
+
+/* Animation du fond (effet eau) */
+@keyframes vague {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Animation du titre principal */
+h1 {
+    margin-top: 40px;
+    font-size: 45px;
+    color: white;
+    animation: slideDown 2s ease-out, glow 2s infinite alternate;
+}
+
+/* Animation apparition */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Effet lumineux */
+@keyframes glow {
+    from { text-shadow: 0 0 10px white; }
+    to { text-shadow: 0 0 25px yellow; }
+}
+
+/* Style des liens */
+h2 a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Animation au survol */
+h2 a:hover {
+    color: yellow;
+    letter-spacing: 2px;
+}
+
+/* Animation des catégories */
+h2 {
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+}
+
+h2:nth-child(2) { animation-delay: 0.5s; }
+h2:nth-child(3) { animation-delay: 1s; }
+h2:nth-child(4) { animation-delay: 1.5s; }
+h2:nth-child(5) { animation-delay: 2s; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation du pêcheur */
+img {
+    width: 250px;
+    margin-top: 30px;
+    animation: peche 3s ease-in-out infinite;
+}
+
+/* Mouvement de pêche */
+@keyframes peche {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Style liens du bas */
+h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+h3 a:hover {
+    color: orange;
+}
