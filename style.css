@@ -1,0 +1,30 @@
+body
+{
+background-image: url("fluide.jpg") ;
+background-size: 100%;
+}
+
+p{
+	color: white;
+		font-family: Arial;
+		background: black ;
+
+}
+H2 {
+	color: white;
+}
+.special
+{
+	background: blue;
+}
+div 
+{
+border: 3px red solid;
+border-radius: 15px;
+width: 700px ;
+height: 200px;
+}
+H1 {
+
+color: white;
+}
